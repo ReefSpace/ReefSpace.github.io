@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PawSearch</title>
+	<link rel="stylesheet" href="style/index_style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="mainbox">
+		<header class="header">
+			<span id="pawtxt" class="pawtxt">Paw</span>Search
+		</header>
+		<div class="function" id="function-bar">
+			<a href="#" class="show_btn"  id="showPic-btn" title="显示/隐藏背景图"><i class="fa fa-picture-o" aria-hidden="true" id="showPic-btn-i"></i></a>
+			<a href="#" class="show_btn"  id="menu-btn" title="菜单"><i class="fa fa-bars" aria-hidden="true" id="menu-btn-i"></i></a>
+			<a href="#" class="show_btn"  id="dark-btn" title="暗色模式"><i class="fa fa-moon-o" aria-hidden="true" id="dark-btn-i"></i></a>
+		</div>
+		<main>
+			<div class="search_wrap" id="search-wrap">
+				<input type="text" placeholder="想搜点什么..." id="search-text" class="search_text" maxlength="45">
+				<a href="#" id="search-btn" class="search_btn">
+					<i class="fa fa-search" aria-hidden="true" id="search-btn-i"></i>
+				</a>
+				<div class="search_place" id="search-place">
+					<ol class="placelist" id="placelist">
+						<li class="fstli"><strong class="matchword">苹果</strong>砸中了牛顿</li>
+						<li><strong class="matchword">苹果</strong>是一家科技公司</li>
+						<li><strong class="matchword">苹果</strong>是世界上广泛分布的植物</li>
+						<li><strong class="matchword" >苹果</strong>是一首歌曲的名字</li>
+						<li>樱桃和<strong class="matchword">苹果</strong>都属蔷薇科</li>
+						<li class="lstli">一天一<strong class="matchword">苹果</strong>，医生远离我</li>
+					</ol>
+				</div>
+			</div>
+
+		</main>
+		<footer>
+			<p>寄蜉蝣于天地，渺沧海之一粟  &nbsp;&nbsp;&nbsp; &copy; 2022 PawSearch Group.</p>
+		</footer>
+	</div>
+	
+	
+	<div class="menu_context" id="menu-context">
+		<ul class="menulist">
+			<li><a href="#" class="pers_link" id="pers-link">个性化</a></li>
+			<li><a href="#" class="prv_link" id="prv-link">隐私</a></li>
+			<li><a href="#">反馈</a></li>
+		</ul>
+	</div>
+	<div class="alertwd" id="alertwd">Sorry，功能还没做完哦~将为你展示Demo页面</div>
+	<div class="personalise" id="personalise">
+		<h2>选择你喜欢的图片作为背景</h2>
+		<div class="imglist" id="imglist">
+			<img src="imgs/earth.jpg" alt="" class="bgimg" name="optionimg">
+			<img src="imgs/BloodMoon.jpg" alt="" class="bgimg" name="optionimg">
+			<img src="imgs/park.jpg" alt="" class="bgimg" name="optionimg">
+			<img src="imgs/lake.jpg"  alt="" class="bgimg" name="optionimg">
+			<img src="imgs/Skyscraper.jpg" alt="" class="bgimg" name="optionimg">
+			<img src="imgs/sunset.jpg" alt="" class="bgimg" name="optionimg">
+			<button type="button" class="check_btn" id="pers-btn">好了</button>
+		</div>
+	</div>
+	<div class="private" id="private">
+		<form action="" class="prv" id="form-prv">
+			<h2 class="form_header_h2">隐私选项</h2>
+			<li class="form_item_li"><input type="checkbox" name="noHistory" id="noHistory" value="" /><label for="noHistory">我不想保存搜索记录</label></li>
+			<li class="form_item_li"><input type="checkbox" name="noCookies" id="noCookies" value="" /><label for="noCookies">我不愿意存储Cookies</label></li>
+			<li class="form_item_li"><input type="checkbox" name="noCommendation" id="noCommendation" value="" /><label for="noCommendation">我不需要个性化推荐服务</label></li>
+			<button type="button" class="check_btn" id="prv-btn">好了</button>
+		</form>
+	</div>
+<script src="js/main.js" type="text/javascript" ></script>
+</body>
+</html>
